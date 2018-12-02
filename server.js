@@ -7,7 +7,7 @@ const pmpt = inquirer.createPromptModule()
 pmpt({
   type: 'input',
   name: 'subreddit',
-  message: 'Enter a subreddit you wish to browse',
+  message: 'Enter a subreddit you wish to browse.',
 }).then(r => {
     const subreddit = r.subreddit
     axios.get(`https://www.reddit.com/r/${subreddit}/`)
